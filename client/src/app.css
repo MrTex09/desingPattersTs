@@ -1,0 +1,51 @@
+
+.app-container {
+    display: flex; 
+  }
+  
+  .sidebar {
+    width: 200px;
+    height: 100vh; 
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+  }
+  
+  .content {
+    margin-left: 250px; 
+    padding: 20px; 
+    flex-grow: 1; 
+  }
+
+
+.boton {
+  background-color: #3498db; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px; 
+  font-size: 16px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin: 20px ; 
+   
+}
+
+.boton:hover {
+  background-color: #2980b9; 
+}
+
+.boton:active {
+  background-color: #1f6391; 
+  transform: scale(0.98); 
+}
+
+.boton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed; 
+}
