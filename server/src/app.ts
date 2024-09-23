@@ -8,6 +8,8 @@ import equipmentRoutes from './routes/equipmentRoutes';
 import userRouter from './routes/userRoutes';
 import brandRoutes from './routes/brandRoutes';
 import categoryRoutes from './routes/categoryRoutes';
+import e from 'express';
+import equipoRouter from './routes/equipo';
 
 dotenv.config();
 
@@ -24,7 +26,7 @@ app.use('/api', userRouter);
 app.use('/api', brandRoutes);
 app.use('/api', categoryRoutes);
 app.use('/equipments', equipmentRoutes);
-
+app.use('/equipo',  equipoRouter );
 const PORT = process.env.PORT || 3000;
 
 sequelize.authenticate()
